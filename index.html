@@ -117,6 +117,11 @@
 	let myGreeting="";
 	let myColor = "";
 	let myPic= "";
+
+	let dayOfTheWeek = new Date().getDay();
+    let weekDay = " " ;
+
+	
 	// alert(myHour);
 	// console.log(myHour);
 	// REMOVE THE FOLLOWING LINE - for testing only
@@ -143,6 +148,37 @@
 		myColor = "MidnightBlue";
 		myPic = "night.jpg";
 	}
+	
+	switch(dayOfTheWeek){
+
+		case 0:
+			weekDay = "Sunday";
+			break;
+		case 1:
+			weekDay = "Monday";
+			break;
+		case 2:
+			weekDay = "Tuesday";
+			break;
+		case 3:
+			weekDay = "Wednesday";
+			break;
+		case 4:
+			weekDay = "Thursday";
+			break;
+		case 5:
+			weekDay = "Friday";
+			break;
+		case 6:
+			weekDay = "Saturday";
+			break;
+}
+alert("Hello!!!   Today is " + weekDay);
+	
+
+
+
+	
 
 	// add images folder to myPic
 	myPic="images/" + myPic; 
